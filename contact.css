@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200&family=Dancing+Script:wght@700&family=Junge&family=Libre+Baskerville&family=Lora:ital@1&family=Quicksand&family=Quintessential&family=Raleway:ital,wght@0,200;1,300&family=Satisfy&family=Source+Sans+Pro:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+font-family: 'Lora', serif;
+}
+
+#header{
+  background-image: url(imagini/background_contact.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: red;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+input[type=text], select, textarea{
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-left: 50px;
+    margin-top: 30px;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  margin-left: 250px;
+    margin-top: 30px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  transform: translate(-440%,300%);
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1{
+  font-size: 20px;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200&family=Dancing+Script:wght@700&family=Junge&family=Libre+Baskerville&family=Lora:ital@1&family=Quicksand&family=Quintessential&family=Raleway:ital,wght@0,200;1,300&family=Satisfy&family=Source+Sans+Pro:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+font-family: 'Lora', serif;
+}
+
+#header{
+  background-image: url(imagini/background_tarife.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: red;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+table{
+  transform: translate(120%,10%);
+}
+th {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: black;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  background-color:black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+
+}
+#myBtn:hover {
+  background-color: black;
+}

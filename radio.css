@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+font-family: 'Lora', serif;
+}
+
+body{
+  background-image: url(imagini/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text{
+  max-width: 350px;
+  transform: translate(90%,500%);
+
+}
+
+label, button {
+  font-size: 20px;
+}
+
+.radio {
+    transform: translate(70%,350%);
+}
