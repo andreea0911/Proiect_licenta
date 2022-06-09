@@ -13,11 +13,13 @@
     <section>
       <div class="container">
         <div class="topnav" id="myTopnav">
-        <a href="file:///D:/Licenta/htdocs/html.html" >ACASA</a>
-        <a href="file:///D:/Licenta/htdocs/despre.html">DESPRE NOI</a>
-        <a href="file:///D:/Licenta/htdocs/contact.html">CONTACTEAZA-NE!</a>
-        <a href="file:///D:/Licenta/htdocs/tarife.html">TARIFE</a>
-        <a href="file:///D:/Licenta/htdocs/galerie.html"class="active">GALERIE</a>
+        <a href="http://localhost/html.html" >ACASA</a>
+        <a href="http://localhost/despre.html">DESPRE NOI</a>
+        <a href="http://localhost/contact.html">CONTACTEAZA-NE!</a>
+        <a href="http://localhost/tarife.html">TARIFE</a>
+        <a href="http://localhost/galerie.html"class="active">GALERIE</a>
+        <a href="http://localhost/statistics.html">STATISTICI</a>
+        
         </div>
 <br><br><br>
 <div class="text">
@@ -93,9 +95,9 @@
            var mybutton = document.getElementById("myBtn");
 
            // When the user scrolls down 20px from the top of the document, show the button
-           window.onscroll = function() {scrollFunction()};
+           window.onscroll = function() {scroll()};
 
-           function scrollFunction() {
+           function scroll() {
            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
            mybutton.style.display = "block";
            } else {

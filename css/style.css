@@ -1,3 +1,16 @@
 #programare-form {
   display: none;
 }
+
+#error {
+  display: none;
+}
+
+body{
+    background-image: url("/imagini/background_galerie.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    margin-left: 50%;
+}

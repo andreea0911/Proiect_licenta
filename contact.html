@@ -12,25 +12,38 @@
     <section >
 
         <div class="topnav" id="myTopnav">
-        <a href="file:///D:/Licenta/htdocs/html.html" >ACASA</a>
-        <a href="file:///D:/Licenta/htdocs/despre.html">DESPRE NOI</a>
-        <a href="file:///D:/Licenta/htdocs/contact.html"class="active">CONTACTEAZA-NE!</a>
-        <a href="file:///D:/Licenta/htdocs/tarife.html">TARIFE</a>
-        <a href="file:///D:/Licenta/htdocs/galerie.html">GALERIE</a>
+        <a href="http://localhost/html.html" >ACASA</a>
+        <a href="http://localhost/despre.html">DESPRE NOI</a>
+        <a href="http://localhost/contact.html"class="active">CONTACTEAZA-NE!</a>
+        <a href="http://localhost/tarife.html">TARIFE</a>
+        <a href="http://localhost/galerie.html">GALERIE</a>
+        <a href="http://localhost/statistics.html">STATISTICI</a>
 
   </div>
 
   <form action="mailto:andreea0911@gmail.com" method="post" onsubmit="return checkForm(this);">
- <label for="nume1">Nume:</label> <input type="text" name="nume1" id="nume1" /><br/>
- <label for="pnume1">Prenume:</label> <input type="text" name="pnume1" id="pnume1" /><br/>
- <label for="email1">E-mail:</label> <input type="text" name="email1" id="email1" /><br/>
- <label for="mesaj1">Mesaj:</label>  <textarea id="mesaj" name="mesaj1" placeholder="Cu ce te putem ajuta?"></textarea>
- <input type="submit" name="fsubmit" id="fsubmit" value="Submit" />
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <label for="nume1">Nume:</label> <input type="text" name="nume1" id="nume1" /><br/>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <label for="pnume1">Prenume:</label> <input type="text" name="pnume1" id="pnume1" /><br/>
+    </div>
+
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <label for="email1">E-mail:</label> <input type="text" name="email1" id="email1" /><br/>
+     </div>
+
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <label for="mesaj1">Mesaj:</label>  <textarea id="mesaj" name="mesaj1" placeholder="Cu ce te putem ajuta?"></textarea>    </div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: end; width: 84%; margin-top: 16px;">
+      <input type="submit" name="fsubmit" id="fsubmit" value="Submit" />
+    </div>
 </form>
 <script type="text/javascript">
 
-var regx_chr = /^([a-zA-Z0-9_-]+)$/;
-var regx_mail = /^([a-zA-Z0-9]+[a-zA-Z0-9._%-]*@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4})$/;
+var caractere = /^([a-zA-Z0-9_-]+)$/;
+var email = /^([a-zA-Z0-9]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]+)$/;
 
 
 function checkForm(frm1) {
@@ -42,19 +55,19 @@ function checkForm(frm1) {
   var email1 = frm1.email1;
   var mesaj1 = frm1.mesaj1;
   // verificare valori (Nume, Parola, E-mail), daca sunt incorecte, returneaza alert si selecteaza casuta
-  if(nume1.value.length<3 || nume1.value.length>18 || nume1.value.search(regx_chr)==-1) {
+  if(nume1.value.length<3 || nume1.value.length>18 || nume1.value.search(caractere)==-1) {
     alert('Numele trebuie sa contina intre 3 si 18 caractere \nNumere, Litere, "-" si "_"');
     nume1.select();    // selecteaza casuta pt. Nume
   }
-  else if(pnume1.value.length<3 || pnume1.value.length>18 || pnume1.value.search(regx_chr)==-1) {
+  else if(pnume1.value.length<3 || pnume1.value.length>18 || pnume1.value.search(caractere)==-1) {
     alert('Preumele trebuie sa contina intre 3 si 18 caractere \nNumere, Litere, "-" si "_"');
     pnume1.select();    // selecteaza casuta pt. Nume
   }
-  else if(email1.value.search(regx_mail)==-1) {
+  else if(email1.value.search(email)==-1) {
     alert('Adaugati o adresa de e-mail corecta');
     email1.select();    // selecteaza casuta pt. E-mail
   }
-  else if(mesaj1.value.length<3 || pnume1.value.search(regx_chr)==-1) {
+  else if(mesaj1.value.length<3 || pnume1.value.search(caractere)==-1) {
     alert('Mesajul trebuie sa contina minim 3 caractere \nNumere, Litere, "-" si "_"');
     mesaj1.select();    // selecteaza casuta pt. Nume
   }

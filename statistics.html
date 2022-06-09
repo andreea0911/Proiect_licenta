@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="statistics.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+
+<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+<div class="topnav" id="myTopnav">
+  <a href="http://localhost/html.html" >ACASA</a>
+  <a href="http://localhost/despre.html">DESPRE NOI</a>
+  <a href="http://localhost/contact.html">CONTACTEAZA-NE!</a>
+  <a href="http://localhost/tarife.html">TARIFE</a>
+  <a href="http://localhost/galerie.html">GALERIE</a>
+  <a href="http://localhost/statistics.html"class="active">STATISTICI</a>
+
+</div>
+
+
+<script>
+var xValues = ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie","octombrie", "noiembrie", "decembrie"];
+var yValues = [92, 86, 102, 71, 99, 89, 40, 52, 110, 78, 93, 50];
+var barColors = ["red", "green","blue","orange","brown", "black", "yellow", "pink", "purple", "gray", "gold", "silver"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Statistica nr. masini service 2022"
+    }
+  }
+});
+</script>
+
+</body>
+</html>

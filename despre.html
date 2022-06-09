@@ -12,11 +12,12 @@
     <section >
 
         <div class="topnav" id="myTopnav">
-        <a href="file:///D:/Licenta/htdocs/html.html" >ACASA</a>
-        <a href="file:///D:/Licenta/htdocs/despre.html"class="active">DESPRE NOI</a>
-        <a href="file:///D:/Licenta/htdocs/contact.html">CONTACTEAZA-NE!</a>
-        <a href="file:///D:/Licenta/htdocs/tarife.html">TARIFE</a>
-        <a href="file:///D:/Licenta/htdocs/galerie.html">GALERIE</a>
+        <a href="http://localhost/html.html" >ACASA</a>
+        <a href="http://localhost/despre.html"class="active">DESPRE NOI</a>
+        <a href="http://localhost/contact.html">CONTACTEAZA-NE!</a>
+        <a href="http://localhost/tarife.html">TARIFE</a>
+        <a href="http://localhost/galerie.html">GALERIE</a>
+        <a href="http://localhost/statistics.html">STATISTICI</a>
 
   </div>
     <div class="container">
@@ -46,7 +47,7 @@
     <br> - etc.
     <br>
   </p>
-   <p style ="text-indent: 30px" > Pe langa serviciile enumerate mai sus, oferim si multe altele, asa ca nu ezitati sa ne contactati prin sectiunea <i><a href="file:///D:/Licenta/htdocs/contact.html">Contacteaza-ne</a></i> din pagina principala!
+   <p style ="text-indent: 30px" > Pe langa serviciile enumerate mai sus, oferim si multe altele, asa ca nu ezitati sa ne contactati prin sectiunea <i><a href="http://localhost/contact.html">Contacteaza-ne</a></i> din pagina principala!
     Iti multumim pentru timpul acordat si te asteptam cu mare drag la noi in service!</p>
 
     <video width="500" height="500" controls>
@@ -114,7 +115,13 @@ Receptie: Georgescu Andreea
 
 
 
-<br><br><br><br>
+<br><br>
+<div class="media">
+     <a  href="https://www.facebook.com/"><i class ="fa fa-facebook fa-lg"></i></a>
+     <a href="https://twitter.com/"><i class ="fa fa-twitter fa-lg"></i></a>
+     <a href="https://www.instagram.com/"><i class ="fa fa-instagram fa-lg"></i></a>
+</div>
+
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
@@ -123,9 +130,9 @@ Receptie: Georgescu Andreea
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scroll()};
 
-function scrollFunction() {
+function scroll() {
 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 mybutton.style.display = "block";
 } else {

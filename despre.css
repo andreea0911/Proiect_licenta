@@ -38,7 +38,7 @@ font-family: 'Lora', serif;
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: red;
+  background-color: #E01613;
   color: white;
 }
 
@@ -48,7 +48,7 @@ font-family: 'Lora', serif;
 }
 
 i {
-  color: red;
+  color: #E01613;
 }
 
 h1{
@@ -127,4 +127,8 @@ li a:hover {
 }
 #myBtn:hover {
   background-color: black;
+}
+
+.media{
+  height: 50vh;
 }

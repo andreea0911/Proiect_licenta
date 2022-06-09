@@ -6,32 +6,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Service Casa Auto</title>
     <link rel="stylesheet" href="style.css">
-    
+
   </head>
   <body id="header">
 
     <section>
       <div class="container">
         <div class="topnav" id="myTopnav">
-        <a href="file:///D:/Licenta/htdocs/html.html" class="active">ACASA</a>
-        <a href="file:///D:/Licenta/htdocs/despre.html">DESPRE NOI</a>
-        <a href="file:///D:/Licenta/htdocs/contact.html">CONTACTEAZA-NE!</a>
-        <a href="file:///D:/Licenta/htdocs/tarife.html">TARIFE</a>
-        <a href="file:///D:/Licenta/htdocs/galerie.html">GALERIE</a>
+        <a href="http://localhost/html.html" class="active">ACASA</a>
+        <a href="http://localhost/despre.html">DESPRE NOI</a>
+        <a href="http://localhost/contact.html">CONTACTEAZA-NE!</a>
+        <a href="http://localhost/tarife.html">TARIFE</a>
+        <a href="http://localhost/galerie.html">GALERIE</a>
+        <a href="http://localhost/statistics.html">STATISTICI</a>
 
 
 
         </div>
    <div class="text">
      <h1>Service Casa Auto</h1>
-    <h3>Masina ta ne-ar alege ne noi!</h3>
+    <h3>Masina ta ne-ar alege pe noi!</h3>
     <br>
    <p>Servicii si reparatii de calitate intr-un singur loc!<br>   Suntem activi din anul 2010, ceea ce rezulta ca service-ul nostru este unul cu experienta,
        iar acest lucru speram sa ofere clientilor nostri incredere. De-a lungul acestor ani ne place sa credem
        ca am oferit doar servicii cu un rapor pret-calitate multumitor pentru clientii care trec pragul service-ului nostru.</p>
 <br>
 
-  <a href="file:///D:/Licenta/htdocs/despre.html">Mai multe</a>
+  <a href="http://localhost/despre.html">Mai multe</a>
 
 </div>
 </div>
@@ -57,16 +58,14 @@
           </div>
       </section>
 
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <button onclick="topFunction()" id="myBtn">Top</button>
 
 <script>
-//Get the button
 var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scroll()};
 
-function scrollFunction() {
+function scroll() {
  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
    mybutton.style.display = "block";
  } else {
@@ -74,7 +73,6 @@ function scrollFunction() {
  }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
  document.body.scrollTop = 0;
  document.documentElement.scrollTop = 0;

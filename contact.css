@@ -38,7 +38,7 @@ font-family: 'Lora', serif;
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: red;
+  background-color: #E01613;
   color: white;
 }
 
@@ -62,8 +62,8 @@ input[type=text], select, textarea{
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
-  margin-left: 250px;
     margin-top: 30px;
+  width: 200px;
 }
 
 input[type=submit] {
@@ -73,8 +73,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: right;
-  transform: translate(-440%,300%);
+  width: 100px;
 }
 
 

@@ -3,14 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/butoane.css">
   </head>
 
   <body>
+    <br>
+    <br>
+    <br>
+    <h3 style="color:#E01613; margin-left:55%">Cautati masini dupa numele proprietarului</h3>
+    <br>
     	<form action="http://localhost/car.php" method="post">
-    <input type="text" name="username" placeholder="Username" id="username" required>
+    <input type="text" name="username" placeholder="Nume sau prenume" id="username" required>
       <input type="submit" value="Cauta">
 		</form>
-		<script src="js/script.js"></script>
+    <h3 style="color:#E01613; margin-left:55%">Vezi programari</h3>
+    <div id="programariContainer">
+    </div>
+<br>
+<br>
+<br>
+<h2 style="color:#E01613">Selectati serviciile dorite</h2>
+<br>
+    <ul id="listWrapper" class="list-group">
+    </ul>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <span style="font-size:200%">Total: </span> <span id="totalWrapper"></span>
+    <br>
+    <br><br>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
   </body>
 </html>

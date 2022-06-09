@@ -38,7 +38,7 @@ font-family: 'Lora', serif;
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: red;
+  background-color: #E01613;
   color: white;
 }
 

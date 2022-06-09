@@ -13,45 +13,45 @@ body {
 }
 .login h1 {
   	text-align: center;
-  	color: red;
+  	color: #E01613;
   	font-size: 30px;
   	padding: 20px 0 20px 0;
-  	border-bottom: 1px solid red;
+  	border-bottom: 1px solid #E01613;
 }
-.login form {
+#loginForm {
   	display: flex;
   	flex-wrap: wrap;
   	justify-content: center;
   	padding-top: 20px;
 }
-.login form label {
+.login label {
   	display: flex;
   	justify-content: center;
   	align-items: center;
   	width: 50px;
   	height: 50px;
-  	background-color: red;
+  	background-color: #E01613;
   	color: grey;
 }
-.login form input[type="password"], .login form input[type="text"] {
+.login input[type="password"], .login input[type="text"] {
   	width: 310px;
   	height: 50px;
-  	border: 1px solid red;
+  	border: 1px solid #E01613;
   	margin-bottom: 20px;
   	padding: 0 15px;
 }
-.login form input[type="submit"] {
+.login input[type="submit"] {
   	width: 100%;
   	padding: 15px;
  	  margin-top: 20px;
-  	background-color: red;
+  	background-color: #E01613;
   	border: 0;
   	cursor: pointer;
   	font-weight: bold;
   	color: white;
   	transition: background-color 0.2s;
 }
-.login form input[type="submit"]:hover {
+.login input[type="submit"]:hover {
 	background-color: white;
   	transition: background-color 0.2s;
 }
